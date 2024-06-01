@@ -35,6 +35,16 @@ export default function App() {
             <CopyToClipboardButton textToCopy={`${(income * 40) / 100}`} />
           </div>
         </div>
+        <h1 className="text-2xl font-bold">Your Saving Total</h1>
+        <div>
+          <p>Total(60%) : </p>
+          <div className="flex items-center flex-col justify-center">
+            <p className="font-bold">
+              <FormatRupiah value={income * 0.6} />
+            </p>
+            <CopyToClipboardButton textToCopy={`${(income * 60) / 100}`} />
+          </div>
+        </div>
         <h1 className="text-2xl font-bold">Result Saving</h1>
         <div className="my-10 grid grid-cols-2 items-center justify-center">
           <div>
